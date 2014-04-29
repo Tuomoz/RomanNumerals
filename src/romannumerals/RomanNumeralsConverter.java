@@ -43,6 +43,8 @@ public class RomanNumeralsConverter
         char[] letters = romanNumber.toCharArray();
         int sum = 0;
 
+        // Go through all the characters in the given string from left to right.
+        // The current number is compared to the next one for the subtraction rule
         for (int i = 0; i < letters.length; i++) {
             int currentNum = letterToInt(letters[i]);
             // If the next number index would be out of bounds use the value 0
